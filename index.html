@@ -1,595 +1,839 @@
-<!doctype html>
-<html lang=pt>
+<!DOCTYPE html>
+<html lang="pt">
+
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=theme-color content=#111110>
-<title>Jessi Madalena — Criadora de Conteúdo | Angola</title>
-<meta name=description content="Jessi Madalena é uma criadora de conteúdo angolana especializada em viagens, gastronomia, reviews e experiências culturais autênticas em Angola e no mundo.">
-<meta name=keywords content="Jessi Madalena, criadora de conteúdo Angola, viagens Angola, gastronomia Angola, Angola Experience, influencer Angola">
-<link rel=canonical href=https://jessimadalena.vercel.app/ >
-<meta property=og:title content="Jessi Madalena — Criadora de Conteúdo">
-<meta property=og:description content="Explorando Angola através da cultura, da gastronomia e de experiências autênticas.">
-<meta property=og:type content=website>
-<meta property=og:url content=https://jessimadalena.vercel.app/ >
-<meta property=og:image content=https://jessimadalena.vercel.app/hero.png>
-<meta name=twitter:card content=summary_large_image>
-<meta name=twitter:title content="Jessi Madalena — Criadora de Conteúdo">
-<meta name=twitter:description content="Explorando Angola através da cultura, da gastronomia e de experiências autênticas.">
-<meta name=twitter:image content=https://jessimadalena.vercel.app/hero.png>
-<link rel=dns-prefetch href=https://fonts.googleapis.com>
-<link rel=dns-prefetch href=https://fonts.gstatic.com>
-<link rel=dns-prefetch href=https://unpkg.com>
-<link rel=dns-prefetch href=https://cdn.jsdelivr.net>
-<link rel=dns-prefetch href=https://cdnjs.cloudflare.com>
-<link rel=preconnect href=https://fonts.googleapis.com>
-<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link rel=preload href=hero.png as=image fetchpriority=high>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel=stylesheet>
-<link rel=preload href=https://unpkg.com/aos@2.3.4/dist/aos.css as=style onload='this.onload=null,this.rel="stylesheet"'>
-<noscript><link rel=stylesheet href=https://unpkg.com/aos@2.3.4/dist/aos.css></noscript>
-<link rel=preload href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css as=style onload='this.onload=null,this.rel="stylesheet"'>
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css></noscript>
-<link rel=stylesheet href=style.css>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111110" />
+
+  <title>Jessi Madalena — Criadora de Conteúdo | Angola</title>
+  <meta name="description"
+    content="Jessi Madalena é uma criadora de conteúdo angolana especializada em viagens, gastronomia, reviews e experiências culturais autênticas em Angola e no mundo." />
+  <meta name="keywords"
+    content="Jessi Madalena, criadora de conteúdo Angola, viagens Angola, gastronomia Angola, Angola Experience, influencer Angola" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://jessimadalena.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jessi Madalena — Criadora de Conteúdo" />
+  <meta property="og:description"
+    content="Explorando Angola através da cultura, da gastronomia e de experiências autênticas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jessimadalena.com/" />
+  <meta property="og:image" content="https://jessimadalena.com/hero.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jessi Madalena — Criadora de Conteúdo" />
+  <meta name="twitter:description"
+    content="Explorando Angola através da cultura, da gastronomia e de experiências autênticas." />
+  <meta name="twitter:image" content="https://jessimadalena.com/hero.png" />
+
+  <!-- ============================================================
+       RESOURCE HINTS — DNS, Preconnect, Preload
+  ============================================================ -->
+
+  <!-- DNS prefetch para origens CDN  -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Preconnect para origens de  fontes (cross-origin) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Preload hero da imagem do Hero — critical LCP resource -->
+  <link rel="preload" href="hero.png" as="image" fetchpriority="high" />
+
+  <!-- ============================================================
+       FONTS
+  ============================================================ -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- ============================================================
+       THIRD-PARTY CSS — Loaded as non-render-blocking
+       AOS and Swiper only apply to below-fold content,
+       so we defer them and fall back for no-JS scenarios.
+  ============================================================ -->
+  <link rel="preload" href="https://unpkg.com/aos@2.3.4/dist/aos.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </noscript>
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </noscript>
+
+  <!-- ============================================================
+       SITE STYLES
+  ============================================================ -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<nav id=navbar class=navbar role=navigation aria-label="Navegação principal">
-<div class=nav-container>
-<a href=#hero class=nav-logo aria-label="Jessi Madalena — Início">
-<span class=logo-first>Jessi</span>
-<span class=logo-last>Madalena</span>
-</a>
-<ul class=nav-links>
-<li><a href=#sobre>Sobre</a></li>
-<li><a href=#angola-experience>Angola Exp.</a></li>
-<li><a href=#viagens>Viagens</a></li>
-<li><a href=#gastronomia>Gastronomia</a></li>
-<li><a href=#reconhecimento>Destaques</a></li>
-<li><a href=#contato class=nav-cta>Trabalhe Comigo</a></li>
-</ul>
-<button class=nav-hamburger id=hamburger aria-label="Abrir menu" aria-expanded=false aria-controls=mobileMenu>
-<span></span><span></span><span></span>
-</button>
-</div>
-<div class=nav-mobile id=mobileMenu aria-hidden=true>
-<button class=nav-mobile-close id=mobileMenuClose aria-label="Fechar menu">
-<svg width=24 height=24 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 aria-hidden=true>
-<path d="M18 6L6 18M6 6l12 12" stroke-linecap=round />
-</svg>
-</button>
-<ul>
-<li><a href=#sobre class=mobile-link>Sobre</a></li>
-<li><a href=#angola-experience class=mobile-link>Angola Experience</a></li>
-<li><a href=#viagens class=mobile-link>Viagens</a></li>
-<li><a href=#gastronomia class=mobile-link>Gastronomia</a></li>
-<li><a href=#reconhecimento class=mobile-link>Destaques</a></li>
-<li><a href=#contato class=mobile-link>Trabalhe Comigo</a></li>
-</ul>
-</div>
-</nav>
-<section id=hero class=hero aria-labelledby=heroTitle>
-<div class=hero-bg aria-hidden=true>
-<div class=hero-image-placeholder></div>
-<div class=hero-overlay></div>
-</div>
-<div class=hero-photo-wrapper aria-hidden=true>
-<img src=hero.png alt="Jessi Madalena" class=hero-photo fetchpriority=high loading=eager decoding=sync width=520 height=693>
-<div class=hero-photo-glow></div>
-</div>
-<div class=hero-content>
-<div class=hero-tag id=heroTag>Criadora de Conteúdo · Angola</div>
-<h1 class=hero-title id=heroTitle>
-<span class=hero-title-line>Jessi</span>
-<span class="hero-title-line hero-title-italic">Madalena</span>
-</h1>
-<p class=hero-subtitle id=heroSubtitle>
-Viagens &nbsp;·&nbsp; Gastronomia &nbsp;·&nbsp; Reviews &nbsp;·&nbsp; Experiências
-</p>
-<p class=hero-desc id=heroDesc>
-Explorando Angola através da cultura, da gastronomia e de experiências autênticas.
-</p>
-<blockquote class=hero-quote id=heroQuote>
-"Mostrar ao mundo que Angola é muito mais do que os estereótipos."
-</blockquote>
-<div class=hero-buttons id=heroButtons>
-<a href=#contato class="btn btn-primary">Trabalhe Comigo</a>
-<a href=#viagens class="btn btn-outline">Explorar Conteúdos</a>
-</div>
-</div>
-<div class=hero-scroll-indicator id=scrollIndicator aria-hidden=true>
-<span class=scroll-line></span>
-</div>
-<div class=hero-stats id=heroStats aria-hidden=true>
-<div class=stat-item>
-<span class=stat-number>410K+</span>
-<span class=stat-label>Seguidores Instagram</span>
-</div>
-<div class=stat-divider></div>
-<div class=stat-item>
-<span class=stat-number>480K+</span>
-<span class=stat-label>Seguidores TikTok</span>
-</div>
-<div class=stat-divider></div>
-<div class=stat-item>
-<span class=stat-number>2025</span>
-<span class=stat-label>Embaixadora do Turismo de Angola</span>
-</div>
-</div>
-</section>
-<section id=premios class=premios aria-label="Prémios e reconhecimentos">
-<div class=premios-bar>
-<div class=premio-item>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=16 height=16 aria-hidden=true>
-<path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" stroke-linejoin=round />
-</svg>
-Forbes Africa · 30 Under 30
-</div>
-<div class=premio-separator aria-hidden=true></div>
-<div class=premio-item>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=16 height=16 aria-hidden=true>
-<circle cx=12 cy=8 r=6 />
-<path d="M12 14v7M8 18h8" stroke-linecap=round />
-</svg>
-Embaixadora Oficial do Turismo de Angola · 2025
-</div>
-<div class=premio-separator aria-hidden=true></div>
-<div class=premio-item>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=16 height=16 aria-hidden=true>
-<circle cx=12 cy=12 r=10 />
-<path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-</svg>
-Personalidade Jovem de África no Turismo · África Tourism Awards 2025
-</div>
-<div class=premio-separator aria-hidden=true></div>
-<div class=premio-item>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=16 height=16 aria-hidden=true>
-<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-<circle cx=9 cy=7 r=4 />
-<path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap=round />
-</svg>
-Bantumen PowerList 100 · 2025
-</div>
-</div>
-</section>
-<section id=sobre class="sobre section-padding">
-<div class=container>
-<div class=sobre-grid>
-<div class=sobre-image-col data-aos=fade-right data-aos-duration=1000>
-<div class=sobre-image-wrapper>
-<div class=sobre-image-bg aria-hidden=true></div>
-<div class=sobre-image-accent aria-hidden=true></div>
-<div class=sobre-image-placeholder>
-<img src=sobre-img.jpg alt="Jessi Madalena — Fotografia de perfil" class=sobre-img loading=lazy decoding=async width=600 height=600>
-</div>
-</div>
-</div>
-<div class=sobre-text-col data-aos=fade-left data-aos-duration=1000 data-aos-delay=200>
-<span class=section-eyebrow>A Criadora &amp; Empreendedora</span>
-<h2 class=section-title>Uma voz que mudou<br><em>a forma como Angola é vista</em></h2>
-<p class=sobre-text>
-Nascida em Lunda Norte, Jessi Madalena cresceu com a convicção de que Angola merecia ser contada com outras palavras. Licenciada em Gestão de Empresas pelo ISPTEC, começou a criar conteúdo em 2020 e construiu, em poucos anos, a maior conta dedicada ao turismo em Angola — com mais de 800 mil seguidores entre Instagram e TikTok.
-</p>
-<p class=sobre-text>
-O seu trabalho vai além de publicações bonitas. É uma missão documentada, premiada e reconhecida internacionalmente: mostrar a sofisticação, a diversidade cultural e a beleza genuína de um país que o mundo ainda está a descobrir.
-</p>
-<div class=sobre-pillars>
-<div class=pillar>
-<span class=pillar-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 width=14 height=14>
-<path d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z" stroke-linecap=round stroke-linejoin=round />
-</svg>
-</span>
-<span class=pillar-text>Gestão &amp; Estratégia</span>
-</div>
-<div class=pillar>
-<span class=pillar-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 width=14 height=14>
-<path d="M12 20h9"/>
-<path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z" stroke-linecap=round stroke-linejoin=round />
-</svg>
-</span>
-<span class=pillar-text>Storytelling Autêntico</span>
-</div>
-<div class=pillar>
-<span class=pillar-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 width=14 height=14>
-<circle cx=12 cy=12 r=10 />
-<path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-</svg>
-</span>
-<span class=pillar-text>Impacto no Turismo Nacional</span>
-</div>
-</div>
-<a href=#contato class="btn btn-primary-dark">Conhecer Mais</a>
-</div>
-</div>
-</div>
-</section>
-<section id=angola-experience class="angola-exp section-padding">
-<div class=ae-bg-pattern aria-hidden=true></div>
-<div class=container>
-<div class=ae-split-grid>
-<div class=ae-text-col data-aos=fade-right data-aos-duration=1000>
-<span class=section-eyebrow>Empreendedorismo</span>
-<h2 class=section-title>Angola<br><em>Experience</em></h2>
-<p class=ae-text>
-Para além do trabalho como criadora de conteúdo e embaixadora do turismo angolano, Jessi Madalena também desenvolve projectos que promovem o país de forma directa.
-</p>
-<p class=ae-text>
-Um desses projectos é a <strong>Angola Experience</strong> — uma agência de turismo criada para conectar viajantes às experiências mais autênticas de Angola. Através de roteiros, pacotes e vivências cuidadosamente desenhadas, a Angola Experience convida pessoas de dentro e fora do país a descobrir Angola de forma real, profunda e inesquecível.
-</p>
-<div class=ae-pillars>
-<div class=ae-pillar>
-<span class=ae-pillar-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 width=14 height=14>
-<circle cx=12 cy=12 r=10 />
-<path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-</svg>
-</span>
-<span class=ae-pillar-text>Destinos Naturais</span>
-</div>
-<div class=ae-pillar>
-<span class=ae-pillar-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 width=14 height=14>
-<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-<polyline points="9 22 9 12 15 12 15 22"/>
-</svg>
-</span>
-<span class=ae-pillar-text>Cultura Local</span>
-</div>
-<div class=ae-pillar>
-<span class=ae-pillar-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 width=14 height=14>
-<path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" stroke-linejoin=round />
-</svg>
-</span>
-<span class=ae-pillar-text>Roteiros Premium</span>
-</div>
-</div>
-<a href=https://www.angolaexperience.com target=_blank rel="noopener noreferrer" class="btn btn-gold">
-Conhecer a Angola Experience
-<svg width=16 height=16 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 aria-hidden=true>
-<path d="M7 17L17 7M17 7H7M17 7v10"/>
-</svg>
-</a>
-</div>
-<div class=ae-image-col data-aos=fade-left data-aos-duration=1000 data-aos-delay=200>
-<div class=ae-image-wrapper>
-<div class=ae-image-bg aria-hidden=true></div>
-<div class=ae-image-accent aria-hidden=true></div>
-<div class=ae-image-placeholder>
-<img src=angola_experience.webp alt="Jessi Madalena — Angola Experience" class=ae-photo loading=lazy decoding=async width=600 height=600>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id=viagens class="viagens section-padding">
-<div class=container>
-<div class="section-header centered" data-aos=fade-up>
-<span class=section-eyebrow>Portfolio Visual</span>
-<h2 class=section-title>Experiências<br><em>&amp; Viagens</em></h2>
-<p class=section-intro>
-De Luanda a Joanesburgo, do Namibe ao Mediterrâneo — cada destino conta uma história única.
-</p>
-</div>
-<div class="swiper viagens-swiper" data-aos=fade-up data-aos-delay=200>
-<div class=swiper-wrapper>
-<div class=swiper-slide>
-<div class=swiper-card>
-<div class=swiper-img>
-<img src=quedas.webp alt="Quedas de Kalandula, Angola" class=swiper-photo loading=eager decoding=async width=600 height=420>
-<div class=swiper-img-overlay aria-hidden=true></div>
-</div>
-<div class=swiper-card-info>
-<span class=card-tag>Angola</span>
-<h4>Quedas de Kalandula</h4>
-<p>A maior catarata de Angola, um espetáculo da natureza.</p>
-</div>
-</div>
-</div>
-<div class=swiper-slide>
-<div class=swiper-card>
-<div class=swiper-img>
-<img src=johannesburgo.webp alt="Joanesburgo, África do Sul" class=swiper-photo loading=lazy decoding=async width=600 height=420>
-<div class=swiper-img-overlay aria-hidden=true></div>
-</div>
-<div class=swiper-card-info>
-<span class=card-tag>África do Sul</span>
-<h4>Joanesburgo</h4>
-<p>A cidade de ouro — energia, cultura e modernidade africana.</p>
-</div>
-</div>
-</div>
-<div class=swiper-slide>
-<div class=swiper-card>
-<div class=swiper-img>
-<img src=adb.webp alt="Adis Abeba, Etiópia" class=swiper-photo loading=lazy decoding=async width=600 height=420>
-<div class=swiper-img-overlay aria-hidden=true></div>
-</div>
-<div class=swiper-card-info>
-<span class=card-tag>Etiópia</span>
-<h4>Adis Abeba</h4>
-<p>Capital de África — uma cidade que surpreende a cada esquina.</p>
-</div>
-</div>
-</div>
-<div class=swiper-slide>
-<div class=swiper-card>
-<div class=swiper-img>
-<img src=adb2.webp alt="Adis Abeba skyline, Etiópia" class=swiper-photo loading=lazy decoding=async width=600 height=420>
-<div class=swiper-img-overlay aria-hidden=true></div>
-</div>
-<div class=swiper-card-info>
-<span class=card-tag>Etiópia</span>
-<h4>Adis Abeba · Skyline</h4>
-<p>O crescimento imparável de uma das capitais mais vibrantes do continente.</p>
-</div>
-</div>
-</div>
-<div class=swiper-slide>
-<div class=swiper-card>
-<div class=swiper-img>
-<img src=doha.webp alt="Doha, Qatar" class=swiper-photo loading=lazy decoding=async width=600 height=420>
-<div class=swiper-img-overlay aria-hidden=true></div>
-</div>
-<div class=swiper-card-info>
-<span class=card-tag>Qatar</span>
-<h4>Doha</h4>
-<p>Entre o deserto e os arranha-céus — um futuro construído na areia.</p>
-</div>
-</div>
-</div>
-<div class=swiper-slide>
-<div class=swiper-card>
-<div class=swiper-img>
-<img src=shangai.webp alt="Xangai, China" class=swiper-photo loading=lazy decoding=async width=600 height=420>
-<div class=swiper-img-overlay aria-hidden=true></div>
-</div>
-<div class=swiper-card-info>
-<span class=card-tag>China</span>
-<h4>Xangai</h4>
-<p>Levando a essência angolana a novos horizontes do outro lado do mundo.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="swiper-pagination viagens-pagination"></div>
-<div class="swiper-button-prev viagens-prev" aria-label="Slide anterior"></div>
-<div class="swiper-button-next viagens-next" aria-label="Próximo slide"></div>
-</div>
-</div>
-</section>
-<section id=gastronomia class=gastronomia>
-<div class=gastro-pattern aria-hidden=true></div>
-<div class=container>
-<div class=gastro-grid>
-<div class=gastro-image-col data-aos=fade-right data-aos-duration=1000>
-<div class=gastro-image-wrapper>
-<img src=Gastronomia/principal.webp alt="Gastronomia — Jessi Madalena" class=gastro-main-photo loading=lazy decoding=async width=600 height=480>
-<div class=gastro-image-overlay aria-hidden=true></div>
-<div class=gastro-image-badge aria-hidden=true>
-<span>Mesa &amp; Sabor</span>
-</div>
-</div>
-<div class=gastro-mini-grid>
-<div class="gastro-mini-img gastro-m1" data-aos=zoom-in data-aos-delay=100>
-<img src=Gastronomia/4x1.webp alt="Gastronomia 1" class=gastro-mini-photo loading=lazy decoding=async width=150 height=88>
-</div>
-<div class="gastro-mini-img gastro-m2" data-aos=zoom-in data-aos-delay=200>
-<img src=Gastronomia/4x2.webp alt="Gastronomia 2" class=gastro-mini-photo loading=lazy decoding=async width=150 height=88>
-</div>
-<div class="gastro-mini-img gastro-m3" data-aos=zoom-in data-aos-delay=300>
-<img src=Gastronomia/4x3.webp alt="Gastronomia 3" class=gastro-mini-photo loading=lazy decoding=async width=150 height=88>
-</div>
-<div class="gastro-mini-img gastro-m4" data-aos=zoom-in data-aos-delay=400>
-<img src=Gastronomia/4x4.webp alt="Gastronomia 4" class=gastro-mini-photo loading=lazy decoding=async width=150 height=88>
-</div>
-</div>
-</div>
-<div class=gastro-text-col data-aos=fade-left data-aos-duration=1000 data-aos-delay=200>
-<span class=section-eyebrow>Mesa &amp; Sabor</span>
-<h2 class="section-title gastro-title">Gastronomia<br><em>&amp; Reviews</em></h2>
-<p class=gastro-text>
-A gastronomia é uma das formas através das quais Jessi Madalena partilha Angola com o mundo.
-</p>
-<p class=gastro-text>
-Entre restaurantes em Luanda e descobertas culinárias durante as suas viagens, Jessi explora sabores, ambientes e experiências que revelam a riqueza e diversidade da cozinha angolana e internacional.
-</p>
-<p class=gastro-text>
-Este olhar gastronómico também deu origem ao <strong>Menu da Jessi</strong>, uma iniciativa que conecta pessoas a restaurantes cuidadosamente selecionados, promovendo experiências culinárias acessíveis, de qualidade e cheias de sabor.
-</p>
-<p class=gastro-text>
-Com a Jessi cada prato conta uma história — e ela é a narradora perfeita para ajudar a contá-la.
-</p>
-<div class=gastro-divider aria-hidden=true></div>
-<a href=https://www.menudajessi.ao target=_blank rel="noopener noreferrer" class="btn btn-gold" data-aos=fade-up data-aos-delay=500>
-Ver Menu da Jessi
-<svg width=16 height=16 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 aria-hidden=true>
-<path d="M7 17L17 7M17 7H7M17 7v10"/>
-</svg>
-</a>
-</div>
-</div>
-</div>
-</section>
-<section id=reconhecimento class="reconhecimento section-padding">
-<div class=container>
-<div class="section-header centered" data-aos=fade-up>
-<span class=section-eyebrow>Reconhecimento</span>
-<h2 class=section-title>Destaques<br><em>&amp; Conquistas</em></h2>
-</div>
-<div class=stats-bar data-aos=fade-up data-aos-delay=100>
-<div class=stat-block>
-<span class=stat-big data-count=411000>0</span><span class=stat-big-suffix>+</span>
-<span class=stat-big-label>Seguidores Instagram</span>
-</div>
-<div class=stat-block>
-<span class=stat-big data-count=480000>0</span><span class=stat-big-suffix>+</span>
-<span class=stat-big-label>Seguidores TikTok</span>
-</div>
-<div class=stat-block>
-<span class=stat-big data-count=10>0</span><span class=stat-big-suffix>+</span>
-<span class=stat-big-label>Cidades Visitadas</span>
-</div>
-<div class=stat-block>
-<span class=stat-big data-count=10>0</span><span class=stat-big-suffix>+</span>
-<span class=stat-big-label>Marcas Parceiras</span>
-</div>
-<div class=stat-block>
-<span class=stat-big data-count=10>0</span><span class=stat-big-suffix>+</span>
-<span class=stat-big-label>Países Visitados</span>
-</div>
-</div>
-<div class=rec-grid>
-<div class=rec-card data-aos=fade-up data-aos-delay=0>
-<div class=rec-card-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=36 height=36>
-<path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" stroke-linejoin=round />
-</svg>
-</div>
-<h4>Forbes Africa · 30 Under 30</h4>
-<p>Primeira influenciadora digital angolana reconhecida na lista Lusófona da Forbes Africa.</p>
-</div>
-<div class=rec-card data-aos=fade-up data-aos-delay=100>
-<div class=rec-card-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=36 height=36>
-<circle cx=12 cy=8 r=6 />
-<path d="M12 14v7M8 18h8" stroke-linecap=round />
-</svg>
-</div>
-<h4>Embaixadora do Turismo de Angola</h4>
-<p>Nomeação oficial pelo governo angolano em outubro de 2025, coroando anos de trabalho na promoção do país.</p>
-</div>
-<div class=rec-card data-aos=fade-up data-aos-delay=200>
-<div class=rec-card-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=36 height=36>
-<circle cx=12 cy=12 r=10 />
-<path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke-linecap=round />
-</svg>
-</div>
-<h4>África Tourism Awards 2025</h4>
-<p>Vencedora do prémio Personalidade Jovem de África no Turismo, reconhecida em todo o continente africano.</p>
-</div>
-<div class=rec-card data-aos=fade-up data-aos-delay=300>
-<div class=rec-card-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=36 height=36>
-<path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9l2 2 4-4" stroke-linecap=round stroke-linejoin=round />
-</svg>
-</div>
-<h4>Bantumen PowerList 100 · 2025</h4>
-<p>Eleita uma das 100 personalidades negras mais influentes do mundo pela plataforma Bantumen.</p>
-</div>
-<div class=rec-card data-aos=fade-up data-aos-delay=400>
-<div class=rec-card-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=36 height=36>
-<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-<circle cx=9 cy=7 r=4 />
-<path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap=round stroke-linejoin=round />
-</svg>
-</div>
-<h4>Maior conta de turismo em Angola</h4>
-<p>+800K seguidores combinados entre Instagram e TikTok. A comunidade digital de turismo mais expressiva do país.</p>
-</div>
-<div class=rec-card data-aos=fade-up data-aos-delay=500>
-<div class=rec-card-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=36 height=36>
-<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-<polyline points="9 22 9 12 15 12 15 22"/>
-</svg>
-</div>
-<h4>Fundadora · Angola Experience</h4>
-<p>Criou e lidera uma agência de turismo dedicada a promover experiências autênticas em Angola.</p>
-</div>
-</div>
-<div class=collab-section data-aos=fade-up>
-<p class=collab-label>Reconhecida por</p>
-<div class=collab-logos>
-<img src=logo/forbes.png alt="Forbes Africa" class=collab-logo-img loading=lazy decoding=async width=140 height=54>
-<img src=logo/governo_de_angola.png alt="Governo de Angola" class=collab-logo-img loading=lazy decoding=async width=140 height=54>
-<img src=logo/africa_tourism_awards.png alt="África Tourism Awards" class=collab-logo-img loading=lazy decoding=async width=140 height=54>
-<img src=logo/bantumen-removebg-preview.png alt=Bantumen class=collab-logo-img loading=lazy decoding=async width=140 height=54>
-</div>
-</div>
-</div>
-</section>
-<section id=contato class=contato>
-<div class=contato-bg aria-hidden=true></div>
-<div class=contato-overlay aria-hidden=true></div>
-<div class=container>
-<div class=contato-content data-aos=fade-up>
-<span class="section-eyebrow contato-eyebrow">Parcerias &amp; Colaborações</span>
-<h2 class=contato-title>Vamos trabalhar<br><em>juntos</em></h2>
-<p class=contato-text>
-Se a sua marca, hotel, restaurante ou evento quer ser comunicado com autenticidade e alcançar uma audiência engajada de mais de 800 mil pessoas em Angola e na diáspora — este é o lugar certo. Conte-me o seu projecto e construímos juntos uma proposta à medida.
-</p>
-<div class=contato-options>
-<div class=contato-option data-aos=fade-up data-aos-delay=100>
-<div class=contato-option-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=1.5 width=28 height=28>
-<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-<polyline points="22,6 12,13 2,6"/>
-</svg>
-</div>
-<div class=contato-option-info>
-<span class=contato-option-label>Email</span>
-<a href=mailto:jessimadalena@gmail.com class=contato-option-value>jessimadalena@gmail.com</a>
-</div>
-</div>
-<div class=contato-option data-aos=fade-up data-aos-delay=200>
-<div class=contato-option-icon aria-hidden=true>
-<svg viewBox="0 0 24 24" fill=currentColor width=28 height=28>
-<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-</svg>
-</div>
-<div class=contato-option-info>
-<span class=contato-option-label>Instagram</span>
-<a href=https://www.instagram.com/jessimadalena target=_blank rel="noopener noreferrer" class=contato-option-value>@jessimadalena</a>
-</div>
-</div>
-</div>
-<div class=social-links data-aos=fade-up data-aos-delay=300>
-<a href=https://www.instagram.com/jessimadalena target=_blank rel="noopener noreferrer" class=social-btn aria-label="Instagram de Jessi Madalena">
-<svg viewBox="0 0 24 24" fill=currentColor aria-hidden=true>
-<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-</svg>
-</a>
-<a href=https://www.tiktok.com/@jessimadalena target=_blank rel="noopener noreferrer" class=social-btn aria-label="TikTok de Jessi Madalena">
-<svg viewBox="0 0 24 24" fill=currentColor aria-hidden=true>
-<path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
-</svg>
-</a>
-</div>
-<a href=mailto:parceiros@jessimadalena.com class="btn btn-gold btn-large">
-Enviar Proposta de Parceria
-</a>
-</div>
-</div>
-</section>
-<footer class=footer>
-<div class=container>
-<div class=footer-inner>
-<div class=footer-logo aria-label="Jessi Madalena">
-<span class=logo-first>Jessi</span>
-<span class=logo-last>Madalena</span>
-</div>
-<p class=footer-tagline>"Mostrar ao mundo que Angola é muito mais do que os estereótipos."</p>
-<nav class=footer-links aria-label="Links do rodapé">
-<a href=#sobre>Sobre</a>
-<a href=https://www.angolaexperience.com target=_blank rel="noopener noreferrer">Angola Experience</a>
-<a href=https://www.menudajessi.ao target=_blank rel="noopener noreferrer">Menu da Jessi</a>
-<a href=#contato>Contacto</a>
-</nav>
-<p class=footer-copy>© 2026 Jessi Madalena. Todos os direitos reservados.</p>
-<p class=footer-credit>Feito por Milton Diogo</p>
-</div>
-</div>
-</footer>
-<script defer src=https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js></script>
-<script defer src=https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js></script>
-<script defer src=https://unpkg.com/aos@2.3.4/dist/aos.js></script>
-<script defer src=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js></script>
-<script defer src=script.js></script>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Jessi Madalena — Início">
+        <span class="logo-first">Jessi</span>
+        <span class="logo-last">Madalena</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+        <li><a href="#angola-experience">Angola Exp.</a></li>
+        <li><a href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+        <li><a href="#gastronomia" data-i18n="nav_gastronomia">Gastronomia</a></li>
+        <li><a href="#reconhecimento" data-i18n="nav_destaques">Destaques</a></li>
+        <li><a href="#contato" class="nav-cta" data-i18n="nav_cta">Trabalhe Comigo</a></li>
+      </ul>
+      <div class="lang-switch" aria-label="Selecionar idioma">
+        <button class="active" data-lang="pt" aria-pressed="true">PT</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu" aria-hidden="true">
+      <button class="nav-mobile-close" id="mobileMenuClose" aria-label="Fechar menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" />
+        </svg>
+      </button>
+      <ul>
+        <li><a href="#sobre" class="mobile-link" data-i18n="nav_sobre">Sobre</a></li>
+        <li><a href="#angola-experience" class="mobile-link">Angola Experience</a></li>
+        <li><a href="#projetos" class="mobile-link" data-i18n="nav_projetos">Projetos</a></li>
+        <li><a href="#gastronomia" class="mobile-link" data-i18n="nav_gastronomia">Gastronomia</a></li>
+        <li><a href="#reconhecimento" class="mobile-link" data-i18n="nav_destaques">Destaques</a></li>
+        <li><a href="#contato" class="mobile-link" data-i18n="nav_cta">Trabalhe Comigo</a></li>
+      </ul>
+      <div class="lang-switch-mobile" aria-label="Selecionar idioma">
+        <button class="active" data-lang="pt" aria-pressed="true">PT</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero" class="hero" aria-labelledby="heroTitle">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-image-placeholder"></div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- LCP Image: eager load, high priority, no lazy -->
+    <div class="hero-photo-wrapper" aria-hidden="true">
+      <img src="hero.png" alt="Jessi Madalena" class="hero-photo" fetchpriority="high" loading="eager" decoding="sync"
+        width="520" height="693" />
+      <div class="hero-photo-glow"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag" id="heroTag" data-i18n="hero_tag">Criadora de Conteúdo · Angola</div>
+      <h1 class="hero-title" id="heroTitle">
+        <span class="hero-title-line">Jessi</span>
+        <span class="hero-title-line hero-title-italic">Madalena</span>
+      </h1>
+      <p class="hero-subtitle" id="heroSubtitle" data-i18n="hero_subtitle">
+        Viagens &nbsp;·&nbsp; Gastronomia &nbsp;·&nbsp; Reviews &nbsp;·&nbsp; Experiências
+      </p>
+      <p class="hero-desc" id="heroDesc" data-i18n="hero_desc">
+        Explorando Angola através da cultura, da gastronomia e de experiências autênticas.
+      </p>
+      <blockquote class="hero-quote" id="heroQuote" data-i18n="hero_quote">
+        "Mostrar ao mundo que Angola é muito mais do que os estereótipos."
+      </blockquote>
+      <div class="hero-buttons" id="heroButtons">
+        <a href="#contato" class="btn btn-primary" data-i18n="hero_btn_cta">Trabalhe Comigo</a>
+        <a href="#projetos" class="btn btn-outline" data-i18n="hero_btn_projetos">Explorar Projetos</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" id="scrollIndicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+
+    <!-- Floating stats -->
+    <div class="hero-stats" id="heroStats" aria-hidden="true">
+      <div class="stat-item">
+        <span class="stat-number">420K+</span>
+        <span class="stat-label">Seguidores Instagram</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">510K+</span>
+        <span class="stat-label">Seguidores TikTok</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">2025</span>
+        <span class="stat-label">Embaixadora do Turismo de Angola</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRÉMIOS
+  ============================================================ -->
+  <section id="premios" class="premios" aria-label="Prémios e reconhecimentos">
+    <div class="premios-bar">
+      <div class="premio-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"
+          aria-hidden="true">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" stroke-linejoin="round" />
+        </svg>
+        Forbes Africa · 30 Under 30
+      </div>
+      <div class="premio-separator" aria-hidden="true"></div>
+      <div class="premio-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"
+          aria-hidden="true">
+          <circle cx="12" cy="8" r="6" />
+          <path d="M12 14v7M8 18h8" stroke-linecap="round" />
+        </svg>
+        Embaixadora Oficial do Turismo de Angola · 2025
+      </div>
+      <div class="premio-separator" aria-hidden="true"></div>
+      <div class="premio-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"
+          aria-hidden="true">
+          <circle cx="12" cy="12" r="10" />
+          <path
+            d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+        </svg>
+        Personalidade Jovem de África no Turismo · África Tourism Awards 2025
+      </div>
+      <div class="premio-separator" aria-hidden="true"></div>
+      <div class="premio-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"
+          aria-hidden="true">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round" />
+        </svg>
+        Bantumen PowerList 100 · 2025
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE
+  ============================================================ -->
+  <section id="sobre" class="sobre section-padding">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-image-col" data-aos="fade-right" data-aos-duration="1000">
+          <div class="sobre-image-wrapper">
+            <div class="sobre-image-bg" aria-hidden="true"></div>
+            <div class="sobre-image-accent" aria-hidden="true"></div>
+            <div class="sobre-image-placeholder">
+              <!-- Converted from CSS background-image to <img> for native lazy loading -->
+              <img src="sobre-img.jpeg" alt="Jessi Madalena — Fotografia de perfil" class="sobre-img" loading="lazy"
+                decoding="async" width="600" height="600" />
+            </div>
+          </div>
+        </div>
+        <div class="sobre-text-col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <span class="section-eyebrow" data-i18n="sobre_eyebrow">A Criadora &amp; Empreendedora</span>
+          <h2 class="section-title" data-i18n="sobre_title">Uma voz que mudou<br /><em>a forma como Angola é vista</em>
+          </h2>
+          <p class="sobre-text" data-i18n="sobre_text1">
+            Nascida na Lunda Norte, Jessi Madalena cresceu com a convicção de que Angola merecia ser contada com outras
+            palavras. Licenciada em Gestão de Empresas pelo ISPTEC, começou a criar conteúdo em 2020 e construiu, em
+            poucos anos, a maior conta dedicada ao turismo em Angola — com mais de 1 milhão de seguidores entre
+            Instagram e
+            TikTok.
+          </p>
+          <p class="sobre-text" data-i18n="sobre_text2">
+            O seu trabalho vai além de publicações bonitas. É uma missão documentada, premiada e reconhecida
+            internacionalmente: mostrar a sofisticação, a diversidade cultural e a beleza genuína de um país que o mundo
+            ainda está a descobrir.
+          </p>
+          <div class="sobre-pillars">
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                  <path
+                    d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="pillar-text" data-i18n="sobre_pillar1">Gestão &amp; Estratégia</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                  <path d="M12 20h9" />
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="pillar-text" data-i18n="sobre_pillar2">Storytelling Autêntico</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </span>
+              <span class="pillar-text" data-i18n="sobre_pillar3">Impacto no Turismo Nacional</span>
+            </div>
+          </div>
+          <a href="#contato" class="btn btn-primary-dark" data-i18n="sobre_btn">Conhecer Mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ANGOLA EXPERIENCE
+  ============================================================ -->
+  <section id="angola-experience" class="angola-exp section-padding">
+    <div class="ae-bg-pattern" aria-hidden="true"></div>
+    <div class="container">
+      <div class="ae-split-grid">
+
+        <!-- TEXT — left -->
+        <div class="ae-text-col" data-aos="fade-right" data-aos-duration="1000">
+          <span class="section-eyebrow" data-i18n="ae_eyebrow">Empreendedorismo</span>
+          <h2 class="section-title" data-i18n="ae_title">Angola<br /><em>Experience</em></h2>
+          <p class="ae-text" data-i18n="ae_text1">
+            Para além do trabalho como criadora de conteúdo e embaixadora do turismo angolano, Jessi Madalena também
+            desenvolve projectos que promovem o país de forma directa.
+          </p>
+          <p class="ae-text" data-i18n="ae_text2">
+            Um desses projectos é a <strong>Angola Experience</strong> — uma agência de turismo criada para conectar
+            viajantes às experiências mais autênticas de Angola. Através de roteiros, pacotes e vivências
+            cuidadosamente desenhadas, a Angola Experience convida pessoas de dentro e fora do país a descobrir
+            Angola de forma real, profunda e inesquecível.
+          </p>
+
+          <div class="ae-pillars">
+            <div class="ae-pillar">
+              <span class="ae-pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </span>
+              <span class="ae-pillar-text" data-i18n="ae_pillar1">Destinos Naturais</span>
+            </div>
+            <div class="ae-pillar">
+              <span class="ae-pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </span>
+              <span class="ae-pillar-text" data-i18n="ae_pillar2">Cultura Local</span>
+            </div>
+            <div class="ae-pillar">
+              <span class="ae-pillar-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                  <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="ae-pillar-text" data-i18n="ae_pillar3">Roteiros Premium</span>
+            </div>
+          </div>
+
+          <a href="https://www.angolaexperience.com" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+            <span data-i18n="ae_btn">Conhecer a Angola Experience</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7v10" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- IMAGE — right -->
+        <div class="ae-image-col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="ae-image-wrapper">
+            <div class="ae-image-bg" aria-hidden="true"></div>
+            <div class="ae-image-accent" aria-hidden="true"></div>
+            <div class="ae-image-placeholder">
+              <img src="angola_experience.jpg" alt="Jessi Madalena — Angola Experience" class="ae-photo" loading="lazy"
+                decoding="async" width="600" height="600" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJETOS & COLABORAÇÕES
+  ============================================================ -->
+  <section id="projetos" class="projetos section-padding">
+    <div class="container">
+
+      <div class="section-header centered" data-aos="fade-up">
+        <span class="section-eyebrow" data-i18n="projetos_eyebrow">Trabalhos &amp; Iniciativas</span>
+        <h2 class="section-title" data-i18n="projetos_title">Projetos &amp;<br /><em>Colaborações</em></h2>
+        <p class="section-intro" data-i18n="projetos_intro">
+          Ao longo da sua trajetória, Jessi Madalena desenvolveu iniciativas, campanhas e colaborações que promovem a
+          cultura, a gastronomia e o turismo angolano para audiências nacionais e internacionais.
+        </p>
+      </div>
+
+      <!-- ── FEATURED: Editorial Asymmetric Block ── -->
+      <article class="ed-featured" data-aos="fade-up">
+        <div class="ed-feat-image">
+          <img src="visit_angola.jpeg"
+            alt="Jessi Madalena na campanha Visit Angola — The Rhythm of Life"
+            loading="lazy" decoding="async" />
+        </div>
+        <div class="ed-feat-content">
+          <span class="ed-label" data-i18n="projetos_tag_turismo">Campanha de Turismo</span>
+          <h3 class="ed-title" data-i18n="projetos_feat_title">Visit Angola —<br>The Rhythm of Life</h3>
+          <p class="ed-desc" data-i18n="projetos_feat_desc">
+            Participação na campanha internacional que promove Angola como destino turístico global através de experiências culturais, paisagens naturais e conteúdos digitais.
+          </p>
+          <a href="https://www.visitangola.ao/" target="_blank" rel="noopener noreferrer" class="ed-link">
+            <span data-i18n="projetos_feat_btn">Visitar Campanha</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- ── SECONDARY: 3-Column Editorial Grid ── -->
+      <div class="ed-grid" aria-label="Outros projetos">
+
+        <!-- 01 -->
+        <article class="ed-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="ed-card-image">
+            <span class="ed-number" aria-hidden="true">01</span>
+            <img src="angola_experience.jpg"
+              alt="Colaboração com a iniciativa Angola Produz"
+              loading="lazy" decoding="async" />
+          </div>
+          <div class="ed-card-content">
+            <span class="ed-label" data-i18n="projetos_tag_comunic">Comunicação</span>
+            <h4 class="ed-card-title" data-i18n="projetos_card1_title">Angola Produz</h4>
+            <p class="ed-card-desc" data-i18n="projetos_card1_desc">Apoio à iniciativa que promove a produção nacional e aproxima a informação económica do público.</p>
+            <a href="https://mindcom.gov.ao/web/noticias/angola-produz-orgulho-do-que-e-nosso"
+              target="_blank" rel="noopener noreferrer" class="ed-link" aria-label="Ver Iniciativa Angola Produz">
+              <span data-i18n="projetos_card1_btn">Ler mais</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="ed-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="ed-card-image">
+            <span class="ed-number" aria-hidden="true">02</span>
+            <img src="image.jpg"
+              alt="Pequenas Empresas, Grandes Sabores — gastronomia em Angola"
+              loading="lazy" decoding="async" />
+          </div>
+          <div class="ed-card-content">
+            <span class="ed-label" data-i18n="projetos_tag_gastro">Gastronomia</span>
+            <h4 class="ed-card-title" data-i18n="projetos_card2_title">Grandes Sabores</h4>
+            <p class="ed-card-desc" data-i18n="projetos_card2_desc">Rubrica dedicada a dar visibilidade a pequenos negócios locais e experiências autênticas de turismo.</p>
+            <span class="ed-link disabled" aria-label="Em breve">
+              <span data-i18n="projetos_card2_btn">Em breve</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="ed-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="ed-card-image">
+            <span class="ed-number" aria-hidden="true">03</span>
+            <img src="doha.jpg"
+              alt="Experiências culturais e gastronómicas pelo mundo"
+              loading="lazy" decoding="async" />
+          </div>
+          <div class="ed-card-content">
+            <span class="ed-label" data-i18n="projetos_tag_viagens">Cultura & Mundo</span>
+            <h4 class="ed-card-title" data-i18n="projetos_card3_title">Viagens Culturais</h4>
+            <p class="ed-card-desc" data-i18n="projetos_card3_desc">Histórias que exploram destinos e sabores, aproximando diferentes culturas globais de Angola.</p>
+            <a href="https://www.instagram.com/jessimadalena"
+              target="_blank" rel="noopener noreferrer" class="ed-link" aria-label="Ver Viagens no Instagram">
+              <span data-i18n="projetos_card3_btn">Ver projeto</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GASTRONOMIA &amp; REVIEWS
+  ============================================================ -->
+  <section id="gastronomia" class="gastronomia">
+    <div class="gastro-pattern" aria-hidden="true"></div>
+    <div class="container">
+      <div class="gastro-grid">
+
+        <!-- IMAGE COLUMN -->
+        <div class="gastro-image-col" data-aos="fade-right" data-aos-duration="1000">
+          <div class="gastro-image-wrapper">
+            <img src="Gastronomia/principal.png" alt="Gastronomia — Jessi Madalena" class="gastro-main-photo"
+              loading="lazy" decoding="async" width="600" height="480" />
+            <div class="gastro-image-overlay" aria-hidden="true"></div>
+            <div class="gastro-image-badge" aria-hidden="true">
+              <span>Mesa &amp; Sabor</span>
+            </div>
+          </div>
+
+          <!-- Filmstrip mini gallery -->
+          <div class="gastro-mini-grid">
+            <div class="gastro-mini-img gastro-m1" data-aos="zoom-in" data-aos-delay="100">
+              <img src="Gastronomia/4x1.png" alt="Gastronomia 1" class="gastro-mini-photo" loading="lazy"
+                decoding="async" width="150" height="88" />
+            </div>
+            <div class="gastro-mini-img gastro-m2" data-aos="zoom-in" data-aos-delay="200">
+              <img src="Gastronomia/4x2.png" alt="Gastronomia 2" class="gastro-mini-photo" loading="lazy"
+                decoding="async" width="150" height="88" />
+            </div>
+            <div class="gastro-mini-img gastro-m3" data-aos="zoom-in" data-aos-delay="300">
+              <img src="Gastronomia/4x3.png" alt="Gastronomia 3" class="gastro-mini-photo" loading="lazy"
+                decoding="async" width="150" height="88" />
+            </div>
+            <div class="gastro-mini-img gastro-m4" data-aos="zoom-in" data-aos-delay="400">
+              <img src="Gastronomia/4x4.png" alt="Gastronomia 4" class="gastro-mini-photo" loading="lazy"
+                decoding="async" width="150" height="88" />
+            </div>
+          </div>
+        </div>
+
+        <!-- TEXT COLUMN -->
+        <div class="gastro-text-col" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <span class="section-eyebrow" data-i18n="gastro_eyebrow">Mesa &amp; Sabor</span>
+          <h2 class="section-title gastro-title" data-i18n="gastro_title">Gastronomia<br /><em>&amp; Reviews</em></h2>
+          <p class="gastro-text" data-i18n="gastro_text1">
+            A gastronomia é uma das formas através das quais Jessi Madalena partilha Angola com o mundo.
+          </p>
+          <p class="gastro-text" data-i18n="gastro_text2">
+            Entre restaurantes em Luanda e descobertas culinárias durante as suas viagens, Jessi explora sabores,
+            ambientes e experiências que revelam a riqueza e diversidade da cozinha angolana e internacional.
+          </p>
+          <p class="gastro-text" data-i18n="gastro_text3">
+            Este olhar gastronómico também deu origem ao <strong>Menu da Jessi</strong>, uma iniciativa que conecta
+            pessoas a restaurantes cuidadosamente selecionados, promovendo experiências culinárias acessíveis, de
+            qualidade e cheias de sabor.
+          </p>
+          <p class="gastro-text" data-i18n="gastro_text4">
+            Com a Jessi cada prato conta uma história — e ela é a narradora perfeita para ajudar a contá-la.
+          </p>
+
+          <div class="gastro-divider" aria-hidden="true"></div>
+
+          <a href="https://www.menudajessi.ao" target="_blank" rel="noopener noreferrer" class="btn btn-gold"
+            data-aos="fade-up" data-aos-delay="500">
+            <span data-i18n="gastro_btn">Ver Menu da Jessi</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7v10" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RECONHECIMENTO &amp; DESTAQUES
+  ============================================================ -->
+  <section id="reconhecimento" class="reconhecimento section-padding">
+    <div class="container">
+      <div class="section-header centered" data-aos="fade-up">
+        <span class="section-eyebrow" data-i18n="rec_eyebrow">Reconhecimento</span>
+        <h2 class="section-title" data-i18n="rec_title">Destaques<br /><em>&amp; Conquistas</em></h2>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="stats-bar" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-block">
+          <span class="stat-big" data-count="420000">0</span><span class="stat-big-suffix">+</span>
+          <span class="stat-big-label">Seguidores Instagram</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-big" data-count="510000">0</span><span class="stat-big-suffix">+</span>
+          <span class="stat-big-label">Seguidores TikTok</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-big" data-count="20">0</span><span class="stat-big-suffix">+</span>
+          <span class="stat-big-label">Cidades Visitadas</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-big" data-count="10">0</span><span class="stat-big-suffix">+</span>
+          <span class="stat-big-label">Marcas Parceiras</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-big" data-count="10">0</span><span class="stat-big-suffix">+</span>
+          <span class="stat-big-label">Países Visitados</span>
+        </div>
+      </div>
+
+      <!-- Achievement cards -->
+      <div class="rec-grid">
+        <div class="rec-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="rec-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="36" height="36">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h4>Forbes Africa · 30 Under 30</h4>
+          <p>Primeira influenciadora digital angolana reconhecida na lista Lusófona da Forbes Africa.</p>
+        </div>
+        <div class="rec-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="rec-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="36" height="36">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M12 14v7M8 18h8" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h4>Embaixadora do Turismo de Angola</h4>
+          <p>Nomeação oficial pelo governo angolano em outubro de 2025, coroando anos de trabalho na promoção do país.
+          </p>
+        </div>
+        <div class="rec-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="rec-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="36" height="36">
+              <circle cx="12" cy="12" r="10" />
+              <path
+                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <h4>África Tourism Awards 2025</h4>
+          <p>Vencedora do prémio Personalidade Jovem de África no Turismo, reconhecida em todo o continente africano.
+          </p>
+        </div>
+        <div class="rec-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="rec-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="36" height="36">
+              <path
+                d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9l2 2 4-4"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h4>Bantumen PowerList 100 · 2025</h4>
+          <p>Eleita uma das 100 personalidades negras mais influentes do mundo pela plataforma Bantumen.</p>
+        </div>
+        <div class="rec-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="rec-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="36" height="36">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h4>Maior conta de turismo em Angola</h4>
+          <p>+1M de seguidores combinados entre Instagram e TikTok. A comunidade digital de turismo mais expressiva do
+            país.</p>
+        </div>
+        <div class="rec-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="rec-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="36" height="36">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <h4>Fundadora · Angola Experience</h4>
+          <p>Criou e lidera uma agência de turismo dedicada a promover experiências autênticas em Angola.</p>
+        </div>
+      </div>
+
+      <!-- Featured collaboration logos -->
+      <div class="collab-section" data-aos="fade-up">
+        <p class="collab-label">Reconhecida por</p>
+        <div class="collab-logos">
+          <img src="logo/forbes.png" alt="Forbes Africa" class="collab-logo-img" loading="lazy" decoding="async"
+            width="140" height="54" />
+          <img src="logo/governo_de_angola.png" alt="Governo de Angola" class="collab-logo-img" loading="lazy"
+            decoding="async" width="140" height="54" />
+          <img src="logo/africa_tourism_awards.png" alt="África Tourism Awards" class="collab-logo-img" loading="lazy"
+            decoding="async" width="140" height="54" />
+          <img src="logo/bantumen-removebg-preview.png" alt="Bantumen" class="collab-logo-img" loading="lazy"
+            decoding="async" width="140" height="54" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     TRABALHE COMIGO
+============================================================ -->
+  <section id="contato" class="contato">
+    <div class="contato-bg" aria-hidden="true"></div>
+    <div class="contato-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="contato-content" data-aos="fade-up">
+        <h2 class="contato-title" data-i18n="contato_title">Vamos trabalhar<br /><em>juntos</em></h2>
+        <p class="contato-text" data-i18n="contato_text">
+          Se a sua marca, hotel, restaurante ou evento quer ser comunicado com autenticidade e alcançar uma audiência
+          engajada de mais de 1 milhão de pessoas em Angola e na diáspora — este é o lugar certo. Conte-me o seu
+          projecto e
+          construímos juntos uma proposta à medida.
+        </p>
+
+        <div class="contato-options">
+          <!-- Email  -->
+          <div class="contato-option" data-aos="fade-up" data-aos-delay="100">
+            <div class="contato-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="contato-option-info">
+              <span class="contato-option-label">Email</span>
+              <a href="mailto:jessimadalena@gmail.com" class="contato-option-value">jessimadalena@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Instagram (existente) -->
+          <div class="contato-option" data-aos="fade-up" data-aos-delay="200">
+            <div class="contato-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </div>
+            <div class="contato-option-info">
+              <span class="contato-option-label">Instagram</span>
+              <a href="https://www.instagram.com/jessimadalena" target="_blank" rel="noopener noreferrer"
+                class="contato-option-value">@jessimadalena</a>
+            </div>
+          </div>
+
+          <!-- WhatsApp  -->
+          <div class="contato-option" data-aos="fade-up" data-aos-delay="300">
+            <div class="contato-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.473-.149-.673.15-.197.3-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12.003 2.001C6.486 2.001 2 6.488 2 12.005c0 2.194.594 4.247 1.635 6.025L2.3 21.701l3.724-.979A9.99 9.99 0 0012.003 22c5.514 0 10-4.486 10-10.001 0-5.515-4.486-10-10-10.001zM12 20.012a8.01 8.01 0 01-4.091-1.112l-.292-.18-2.215.582.591-2.168-.177-.306A8.006 8.006 0 014 12.005c0-4.423 3.59-8.01 8-8.01 4.411 0 8 3.587 8 8.01 0 4.424-3.589 8.007-8 8.007z" />
+              </svg>
+            </div>
+            <div class="contato-option-info">
+              <span class="contato-option-label">WhatsApp</span>
+              <a href="https://api.whatsapp.com/send?phone=244930928402" target="_blank" rel="noopener noreferrer"
+                class="contato-option-value">+244 930 928 402</a>
+            </div>
+          </div>
+
+          <!-- Telefone  -->
+          <div class="contato-option" data-aos="fade-up" data-aos-delay="400">
+            <div class="contato-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="contato-option-info">
+              <span class="contato-option-label">Telefone</span>
+              <a href="tel:+244930928402" class="contato-option-value">+244 930 928 402</a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links" data-aos="fade-up" data-aos-delay="700">
+          <!-- Instagram (existente) -->
+          <a href="https://www.instagram.com/jessimadalena" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="Instagram de Jessi Madalena">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <!-- TikTok (existente) -->
+          <a href="https://www.tiktok.com/@jessimadalena" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="TikTok de Jessi Madalena">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+            </svg>
+          </a>
+          <!-- LinkedIn (novo) -->
+          <a href="http://linkedin.com/in/jessi-madalena-7b28b31b5" target="_blank" rel="noopener noreferrer"
+            class="social-btn" aria-label="LinkedIn de Jessi Madalena">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.204 0 22.225 0z" />
+            </svg>
+          </a>
+          <!-- X / Twitter (novo) -->
+          <a href="http://x.com/Jessimadalena" target="_blank" rel="noopener noreferrer" class="social-btn"
+            aria-label="X (Twitter) de Jessi Madalena">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+        </div>
+
+        <a href="https://api.whatsapp.com/send?phone=244930928402" target="_blank" class="btn btn-gold btn-large">
+          <span data-i18n="contato_btn">Enviar Proposta de Parceria</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo" aria-label="Jessi Madalena">
+          <span class="logo-first">Jessi</span>
+          <span class="logo-last">Madalena</span>
+        </div>
+        <p class="footer-tagline" data-i18n="footer_tagline">"Mostrar ao mundo que Angola é muito mais do que os
+          estereótipos."</p>
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 Jessi Madalena. Todos os direitos reservados.</p>
+        <p class="footer-credit" data-i18n="footer_credit">Feito por Milton Diogo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS — All deferred to prevent render blocking.
+       Order matters: GSAP core → ScrollTrigger → AOS → Swiper → app
+  ============================================================ -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="script.js"></script>
+
 </body>
+
 </html>
